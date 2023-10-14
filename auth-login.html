@@ -74,15 +74,15 @@
 
           <h2 class="hfs mb-3">Login</h2>
 
-          <form id="formLogin" class="mb-3" action="" method="POST">
+          <form id="formLogin" class="mb-3" action="" method="POST" onsubmit="return validateForm()">
             <div class="mb-2">
               <label for="email" class="form-label">Email </label>
-              <input type="text" class="form-control" id="email" name="email-username" placeholder="Email or username" autofocus="">
+              <input type="text" class="form-control" id="email" name="email-username" placeholder="Email or username" autocomplete="off" autofocus>
             </div>
             <div class="mb-2 form-password-toggle">
               <label class="form-label" for="password">Password</label>
               <div class="input-group input-group-merge">
-                <input type="password" id="password" class="form-control" name="password" placeholder="Password" aria-describedby="password">
+                <input type="password" id="password" class="form-control" name="password" placeholder="Password" aria-describedby="password" autocomplete="off">
                 <span class="input-group-text cursor-pointer"><img src="assets/img/hide.png" width="auto" height="30" alt=""></span>
               </div>
             </div>
@@ -166,10 +166,8 @@
   <script src="assets/vendor/js/bootstrap.js"></script>
   <!-- end -->
 
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
   <!-- Page JS -->
-  <script src="assets/js/pages-auth.js"></script>
+  <script src="assets/js/auth-login.js"></script>
   
 </body>
 
