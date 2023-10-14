@@ -165,12 +165,12 @@ form input[type="checkbox"]:checked{
     border: 2px solid #bbbbbb;
     height: 3.15rem;
 }
-.form-control:focus{
+.form-control:focus, input-group:focus{
     background-color: #f1f1f1;
     border: 2px solid #bbbbbb !important;
 }
 form input[type="password"]:focus{
-    border-right: 0px;
+    border-right: 0 !important;
 }
 .input-group-text {
     border-bottom-right-radius: 20px;
@@ -205,29 +205,12 @@ form input[type="password"]:focus{
 .social-icons a > img{
     width: 30px;
     height: 30px;
-    /* padding: 30px 25px 15px; */
 }
-.social-icons .btn-label-facebook {
-    background-image: url(../../../img/facebook.png) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.social-icons a:hover{
+    border: 2px solid #a4a8ab;
+    background-color: transparent;
 }
-.social-icons .btn-label-google-plus {
-    background-image: url(../../../img/search.png) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.social-icons .btn-label-twitter {
-    background-image: url(../../../img/twitter.png) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.btn-label-twitter:hover {
-    /* background-color: #fff !important; */
-}
+
 
 .st-link{
     color: var(--mainColor);
